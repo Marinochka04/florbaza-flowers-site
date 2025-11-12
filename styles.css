@@ -628,22 +628,30 @@ body {
 }
 
 .contact-info {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 10px 15px;
-    justify-items: start;
-    align-items: center;
-    margin: 20px 0;
-    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
-.contact-info div {
-    display: contents;
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
 }
 
-.contact-info .icon {
-    width: 25px;
-    height: 25px;
+.contact-item .icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    align-self: center;
+}
+
+.contact-item span {
+    line-height: 1.4;
+    display: inline-block;
+    max-width: 350px;
+    word-wrap: break-word;
+    align-self: center;
 }
 
 .footer-social {
