@@ -358,8 +358,8 @@ body {
     padding: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 500px;
+    justify-content: flex-start;
+    height: auto;
 }
 
 .carousel-item img {
@@ -367,18 +367,21 @@ body {
     height: 300px;
     object-fit: cover;
     object-position: center;
+    margin-bottom: 10px;
 }
 
-.carousel-item p {
+.carousel-item p:nth-of-type(1) {
     font-size: 1rem;
     line-height: 1.4;
-    margin: 15px 0 5px;
-    color: var(--text-color2);
-    flex: 1;
+    margin: 0 0 10px;
+    flex-grow: 1;
     overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
+}
+
+.carousel-item p:nth-of-type(2) {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: auto;
 }
 
 .price {
