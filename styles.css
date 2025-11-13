@@ -692,6 +692,56 @@ body {
 }
 
 @media (max-width: 1100px) and (min-width: 769px) {
+    .logo {
+        font-size: 22px;
+    }
+
+    .nav a {
+        font-size: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .feature-card img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .mission {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .mission .container {
+        flex-direction: column;
+    }
+
+    .mission-content {
+        width: 100%;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .mission-image {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .mission-image img {
+        object-position: center;
+    }
+
     .event-card {
         flex-wrap: wrap;
         justify-content: center;
