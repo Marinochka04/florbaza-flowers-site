@@ -994,34 +994,69 @@ body {
         font-size: 1.2rem;
     }
 
+    .clients {
+        padding: 40px 0;
+    }
+
     .clients-slider {
-        flex-direction: column;
+        position: relative;
+        display: flex;
         align-items: center;
+        justify-content: center;
+        gap: 0;
+        width: 100%;
+        overflow: hidden;
     }
 
     .clients-list {
-        gap: 15px;
-        padding: 0 10px;
-    }
-
-    .slider-btn {
-        font-size: 24px;
+        display: flex;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+        width: 100%;
+        justify-content: flex-start;
     }
 
     .client-card {
         flex: 0 0 85%;
         height: auto;
-        max-width: 280px;
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 15px;
+        background-color: var(--first-color);
     }
 
     .client-card img {
-        height: 200px;
+        height: 220px;
+        width: 100%;
+        object-fit: cover;
     }
 
     .slider-btn {
-        font-size: 24px;
-        position: relative;
-        top: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: (255, 255, 255, 0.7);
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        font-size: 20px;
+        line-height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .slider-btn.prev {
+        left: 10px;
+    }
+
+    .slider-btn.next {
+        right: 10px;
+    }
+
+    .slider-btn:hover {
+        background-color: var(--second-color);
+        color: var(--text-color1);
     }
 
     .footer-map {
