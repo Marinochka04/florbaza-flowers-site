@@ -916,13 +916,29 @@ body {
         align-items: center;
     }
 
+    .clients-list {
+        gap: 15px;
+        padding: 0 10px;
+    }
+
     .slider-btn {
         font-size: 24px;
     }
 
     .client-card {
-       flex: 0 0 85%;
+        flex: 0 0 85%;
         height: auto;
+        max-width: 280px;
+    }
+
+    .client-card img {
+        height: 200px;
+    }
+
+    .slider-btn {
+        font-size: 24px;
+        position: relative;
+        top: 0;
     }
 
     .footer-map {
