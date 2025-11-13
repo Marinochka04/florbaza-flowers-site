@@ -901,13 +901,45 @@ body {
         padding: 40px 0;
     }
 
-    .carousel {
-        gap: 10px;
+    .catalog .carousel {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+        width: 100%;
+        overflow: hidden;
     }
 
-    .carousel-btn {
-        font-size: 24px;
-        padding: 5px;
+    .catalog .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        font-size: 20px;
+        line-height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        color: var(--text-color2);
+        z-index: 5;
+    }
+
+    .catalog .carousel-btn.prev {
+        left: 10px;
+    }
+
+    .catalog .carousel-btn.next {
+        right: 10px;
+    }
+
+    .catalog .carousel-btn:hover {
+        background: var(--second-color);
+        color: var(--text-color1);
     }
 
     .carousel-inner {
