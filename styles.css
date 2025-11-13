@@ -855,10 +855,6 @@ body {
         padding: 10px 25px;
     }
 
-    .features h2 {
-        font-size: 1.4rem;
-    }
-
     .features-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
@@ -871,10 +867,6 @@ body {
 
     .mission-content {
         padding: 30px 20px;
-    }
-
-    .mission-content h2 {
-        font-size: 1.4rem;
     }
 
     .mission-content .mission-text {
@@ -907,8 +899,8 @@ body {
         align-self: center;
     }
 
-    .clients h2 {
-        font-size: 1.4rem;
+    h2 {
+        font-size: 1.2rem;
     }
 
     .clients-slider {
